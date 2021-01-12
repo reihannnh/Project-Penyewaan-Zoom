@@ -10,10 +10,11 @@ package projectakhir;
  * @author Hp
  */
 public class MVC {
-//    ViewDaftar vd = new ViewDaftar();
-//    ViewHome vh = new ViewHome();
-//    ViewPembelian vp = new ViewPembelian();
-//    ViewInput vi = new ViewInput();
-//    ViewEdit ve = new ViewEdit();
-    ViewTampil vt = new ViewTampil();
+  ModelSQL Koneksi = new ModelSQL();
+  ViewDaftar vd = new ViewDaftar();
+  ViewHome vh = new ViewHome();
+  ViewPembelian vp = new ViewPembelian();
+  ViewInput vi = new ViewInput();
+  ViewEdit ve = new ViewEdit();
+  ViewTampil vt = new ViewTampil();
 }
