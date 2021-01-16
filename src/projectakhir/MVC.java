@@ -17,4 +17,9 @@ public class MVC {
   ViewInput vi = new ViewInput();
   ViewEdit ve = new ViewEdit();
   ViewTampil vt = new ViewTampil();
+ 
+  
+  Model m = new Model();
+  
+  Controller c = new Controller(vd,vh,vt,ve,vi,vp,m);
 }

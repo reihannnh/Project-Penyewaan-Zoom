@@ -22,7 +22,7 @@ public class ViewHome extends JFrame{
     public ViewHome(){
         setTitle("Penyewaan Zoom");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
+        setVisible(false);
         setLayout(null);
         setSize(1000,600);
         

@@ -17,8 +17,8 @@ public class ViewDaftar extends JFrame {
     JLabel jlheader2 = new JLabel("PENYEWAAN ZOOM");
     
     //Username
-    JTextField jtusername = new JTextField("Username");
-    JPasswordField jppassword = new JPasswordField("Password");
+    JTextField jtusername = new JTextField();
+    JPasswordField jppassword = new JPasswordField();
     //Password
     JButton jblogin = new JButton("Login");
     JButton jbdaftar = new JButton("Daftar");
@@ -50,7 +50,22 @@ public class ViewDaftar extends JFrame {
         add(jblogin);
         jblogin.setBounds(380, 280, 200, 20);
         //Daftar
-        add(jbdaftar);
-        jbdaftar.setBounds(380, 320, 200, 20);
+       // add(jbdaftar);
+        //jbdaftar.setBounds(380, 320, 200, 20);
+       
+       
+        
     }
+    
+    public String getusername()
+    {
+        return jtusername.getText();
+    }
+    
+     public String getpassword()
+    {
+        return jppassword.getText();
+    }
+     
+    
 }
