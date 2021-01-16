@@ -90,6 +90,38 @@ public class Controller  {
               vp.setVisible(true);
            }
        });
+       
+       vp.jbkembali.addActionListener(new ActionListener(){
+           @Override
+           public void actionPerformed(ActionEvent e) {
+              vp.setVisible(false);
+              vh.setVisible(true);
+           }
+       });
+       
+       vi.jbkembali.addActionListener(new ActionListener(){
+           @Override
+           public void actionPerformed(ActionEvent e) {
+              vi.setVisible(false);
+              vh.setVisible(true);
+           }
+       });
+       
+       ve.jbkembali.addActionListener(new ActionListener(){
+           @Override
+           public void actionPerformed(ActionEvent e) {
+              ve.setVisible(false);
+              vh.setVisible(true);
+           }
+       });
+       
+       vt.jbkembali.addActionListener(new ActionListener(){
+           @Override
+           public void actionPerformed(ActionEvent e) {
+              vt.setVisible(false);
+              vh.setVisible(true);
+           }
+       });
       
    }
 }

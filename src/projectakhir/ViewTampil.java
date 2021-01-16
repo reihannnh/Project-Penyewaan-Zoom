@@ -12,6 +12,9 @@ import javax.swing.table.DefaultTableModel;
  * @author Hp
  */
 public class ViewTampil extends JFrame {
+    //Kembali
+    JButton jbkembali = new JButton("←");
+    
     //Header
     JLabel jlheader = new JLabel("Daftar Paket");
     
@@ -25,11 +28,15 @@ public class ViewTampil extends JFrame {
     JButton jbmenu = new JButton("Menu");
     
     public ViewTampil(){
-        setTitle("Penyewaan Zoom");
+        setTitle("Penyewaan Zoom/riwayat_transaksi");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(false);
         setLayout(null);
         setSize(1000,600);
+        
+        //Kembali
+        add(jbkembali);
+        jbkembali.setBounds(20, 20, 100, 20);
         
         dtm = new DefaultTableModel(namaKolom, 0);
         tabel = new JTable(dtm);

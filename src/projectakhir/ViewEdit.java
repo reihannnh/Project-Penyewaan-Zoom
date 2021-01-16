@@ -12,6 +12,9 @@ import javax.swing.table.DefaultTableModel;
  * @author Hp
  */
 public class ViewEdit extends JFrame{
+    //Kembali
+    JButton jbkembali = new JButton("←");
+    
     //Header
     JLabel jlheader = new JLabel("Edit Paket");
     JLabel jlheader2 = new JLabel("Masukkan Data Paket yang Baru");
@@ -50,7 +53,7 @@ public class ViewEdit extends JFrame{
     Object namaKolom[] = {"Kode", "Paket", "Maks Partisiapan", "Durasi", "Harga", "Stok"};
     
     public ViewEdit(){
-        setTitle("Penyewaan Zoom");
+        setTitle("Penyewaan Zoom/edit_paket");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(false);
         setLayout(null);
@@ -63,6 +66,10 @@ public class ViewEdit extends JFrame{
         // setBounds(m,n,o,p)
 	// m = posisi x; n = posisi y
 	// o = panjang komponen; p = tinggi komponen
+        
+        //Kembali
+        add(jbkembali);
+        jbkembali.setBounds(20, 20, 100, 20);
         
         //Header
         add(jlheader);

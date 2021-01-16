@@ -14,6 +14,9 @@ public class ViewInput extends JFrame {
     //Header
     JLabel jlheader = new JLabel("Tambahkan Paket Zoom");
     
+    //Kembali
+    JButton jbkembali = new JButton("←");
+    
     //Kode Paket
     JLabel jlkode = new JLabel("Kode:");
     JTextField jtkode = new JTextField();
@@ -42,7 +45,7 @@ public class ViewInput extends JFrame {
     JButton jbtambah = new JButton("Tambahkan");
     
     public ViewInput(){
-        setTitle("Penyewaan Zoom");
+        setTitle("Penyewaan Zoom/input_paket");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(false);
         setLayout(null);
@@ -55,6 +58,10 @@ public class ViewInput extends JFrame {
         //Header
         add(jlheader);
         jlheader.setBounds(380, 60, 200, 20);
+        
+        //Kembali
+        add(jbkembali);
+        jbkembali.setBounds(20, 20, 100, 20);
         
         //Nama Paket
         add(jlkode);

@@ -17,6 +17,8 @@ public class ViewPembelian extends JFrame{
     JLabel jlheader = new JLabel("Daftar Paket");
     JLabel jlheader2 = new JLabel("Masukkan Data Pembeli");
     
+    //Kembali
+    JButton jbkembali = new JButton("←");
     //Table
     JTable tabel;
     DefaultTableModel dtm;
@@ -40,7 +42,7 @@ public class ViewPembelian extends JFrame{
     JButton jbpembelian = new JButton("Pembelian");
     
     public ViewPembelian(){
-        setTitle("Penyewaan Zoom");
+        setTitle("Penyewaan Zoom/pembelian");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(false);
         setLayout(null);
@@ -58,6 +60,9 @@ public class ViewPembelian extends JFrame{
         add(jlheader);
         jlheader.setBounds(460, 20, 200, 20);
         
+        //Kembali
+        add(jbkembali);
+        jbkembali.setBounds(20, 20, 100, 20);
         //Tabel
         add(scrollPane);
         scrollPane.setBounds(200, 60, 600, 220);

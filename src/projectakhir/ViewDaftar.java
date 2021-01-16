@@ -17,15 +17,17 @@ public class ViewDaftar extends JFrame {
     JLabel jlheader2 = new JLabel("PENYEWAAN ZOOM");
     
     //Username
+    JLabel jlusername = new JLabel("Username");
     JTextField jtusername = new JTextField();
     JPasswordField jppassword = new JPasswordField();
     //Password
+    JLabel jlpassword = new JLabel("Password");
     JButton jblogin = new JButton("Login");
     JButton jbdaftar = new JButton("Daftar");
     
     public ViewDaftar()
     {
-        setTitle("Penyewaan Zoom");
+        setTitle("Penyewaan Zoom/login");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         setLayout(null);
@@ -41,14 +43,18 @@ public class ViewDaftar extends JFrame {
         add(jlheader2);
         jlheader2.setBounds(420, 160, 200, 20);
         //Username
+        add(jlusername);
         add(jtusername);
-        jtusername.setBounds(380, 200, 200, 20);
+        jlusername.setBounds(450, 200, 200, 20);
+        jtusername.setBounds(380, 220, 200, 20);
         //Password
+        add(jlpassword);
         add(jppassword);
-        jppassword.setBounds(380, 240, 200, 20);
+        jlpassword.setBounds(450, 240, 200, 20);
+        jppassword.setBounds(380, 260, 200, 20);
         //Login
         add(jblogin);
-        jblogin.setBounds(380, 280, 200, 20);
+        jblogin.setBounds(380, 300, 200, 20);
         //Daftar
        // add(jbdaftar);
         //jbdaftar.setBounds(380, 320, 200, 20);
