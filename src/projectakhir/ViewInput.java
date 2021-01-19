@@ -102,5 +102,41 @@ public class ViewInput extends JFrame {
         //Button Tambah
         add(jbtambah);
         jbtambah.setBounds(400, 460, 120, 20);
+        
+        
+       
     }
+    
+     public String getkode()
+        {
+            return jtkode.getText();
+        }
+     
+     public String getnama()
+     {
+         return jtpaket.getText();
+     }
+     
+     public String getmaksparticipant()
+     {
+         return jtpartisipan.getText();
+     }
+     
+     public String getdurasi()
+     {
+         return jtdurasi.getText();
+     }
+     
+     public String getharga()
+     {
+         return jtharga.getText();
+     }
+     
+     public String getstok()
+     {
+         return jtstok.getText();
+     }
+     
+  
 }
+
