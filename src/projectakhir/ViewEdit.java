@@ -120,5 +120,38 @@ public class ViewEdit extends JFrame{
         //Tabel
         add(scrollPane);
         scrollPane.setBounds(340, 80, 600, 380);
+        
+        
     }
+    
+      public String getkode()
+      {
+          return jtkode.getText();
+      }
+      
+      public String getpaket()
+      {
+          return jtpaket.getText();
+      }
+      
+      public String getmaks()
+      {
+          return jtpartisipan.getText();
+      }
+      
+      public String getdurasi()
+      {
+          return jtdurasi.getText();
+      }
+      
+      public String getharga()
+      {
+          return jtharga.getText();
+          
+      }
+      
+      public String getstok()
+      {
+          return jtstok.getText();
+      }
 }

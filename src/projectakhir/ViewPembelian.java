@@ -98,5 +98,27 @@ public class ViewPembelian extends JFrame{
         //Pembelian
         add(jbpembelian);
         jbpembelian.setBounds(420, 520, 200, 20);
+        
+        
+    }
+    
+    public String getnama()
+    {
+        return jtnama.getText();
+    }
+    
+    public String getnomertelepon()
+    {
+        return jtnotlp.getText();
+    }
+    
+    public String getalamat()
+    {
+        return jtalamat.getText();
+    }
+    
+    public String gettanggalpembelian()
+    {
+        return jttanggal.getText();
     }
 }

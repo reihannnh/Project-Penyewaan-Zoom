@@ -49,7 +49,6 @@ public class ViewTampil extends JFrame {
         scrollPane.setBounds(200, 60, 600, 380);
         
         //Pembelian
-        add(jbmenu);
-        jbmenu.setBounds(400, 480, 200, 20);
+       
     }
 }
