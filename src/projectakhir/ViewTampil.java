@@ -16,7 +16,7 @@ public class ViewTampil extends JFrame {
     JButton jbkembali = new JButton("←");
     
     //Header
-    JLabel jlheader = new JLabel("Daftar Paket");
+    JLabel jlheader = new JLabel("Riwayat Transaksi");
     
     //Table
     JTable tabel;
